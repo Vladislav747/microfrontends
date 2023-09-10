@@ -8,6 +8,7 @@ import Header from "home/Header";
 import Footer from "home/Footer";
 import PDPContent from "pdp/PDPContent";
 import HomeContent from "home/HomeContent";
+import CartContent from "cart/CartContent";
 
 export default function MainLayout() {
     return (
@@ -18,6 +19,7 @@ export default function MainLayout() {
                     <Switch>
                         <Route exact path="/" component={HomeContent} />
                         <Route path="/product/:id" component={PDPContent} />
+                        <Route path="/cart" component={CartContent} />
                     </Switch>
                 </div>
                 <Footer />
